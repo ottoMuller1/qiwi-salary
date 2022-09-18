@@ -536,3 +536,32 @@ IMPORTANT: attemption to start server at 8080
 2022-09-12 00:54:32 UTC: IMPORTANT: attemption to start server at 8080
 2022-09-12 00:56:19 UTC: IMPORTANT: attemption to start server at 8080
 2022-09-12 01:09:24 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 14:30:47 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 14:35:22 UTC: WARNING: no Auth-token here
+2022-09-12 17:26:13 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 17:26:18 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 17:27:32 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 17:28:45 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 17:30:49 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 17:30:49 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 17:30:51 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 17:30:53 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 17:31:12 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 17:31:15 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 19:13:36 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 19:14:53 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 19:15:35 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-12 19:16:03 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-12 19:16:14 UTC: WARNING: try to get users -> no Auth-token here
+2022-09-18 20:14:01 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-18 20:14:31 UTC: WARNING: try to add user -> no Auth-token here
+2022-09-18 20:14:36 UTC: WARNING: try to get users -> no Auth-token here
+2022-09-18 20:15:05 UTC: WARNING: try to get users -> no Auth-token here
+2022-09-18 20:16:19 UTC: WARNING: wrong token to get users 
+2022-09-18 20:16:56 UTC: WARNING: could not find ADM file
+2022-09-18 20:17:02 UTC: WARNING: could not find ADM file
+2022-09-18 20:17:10 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-18 20:21:39 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-18 20:22:05 UTC: IMPORTANT: attemption to start server at 8080
+2022-09-18 20:22:46 UTC: WARNING: wrong token to get users 
+2022-09-18 20:23:42 UTC: IMPORTANT: attemption to start server at 8080

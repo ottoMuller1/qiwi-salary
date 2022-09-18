@@ -21,14 +21,18 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- postgresql-simple
+- hasql
 - servant-server
 - aeson
 - warp
 - datetime
 - text
 - time
+- bytestring
 - http-conduit
+- transformers
+- case-insensitive
+- directory
 
 ghc-options:
 - -Wall

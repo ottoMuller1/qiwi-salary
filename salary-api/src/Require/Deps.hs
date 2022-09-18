@@ -8,8 +8,15 @@ module Require.Deps (
     module Datetime,
     module MIO,
     module T,
-    module TIO,
-    module DTC ) where
+    module MonadTransClass,
+    --module TIO,
+    module DataCase,
+    module Ex,
+    module ExT,
+    module DTC,
+    module HTTP,
+    module BL8,
+    module Dir ) where
 
 import Servant as ServantApi ( 
     ( :> ),
@@ -22,11 +29,20 @@ import Servant as ServantApi (
     Capture,
     Server,
     Application,
+    Header,
     Handler ( .. ),
     PlainText,
     FormUrlEncoded,
     OctetStream,
-    serve )
+    throwError,
+    serve,
+    errReasonPhrase,
+    err404,
+    err500 )
+
+import Control.Monad.Trans.Except as ExT ( ExceptT ( .. ), runExceptT )
+
+import Control.Exception as Ex ( try )
 
 import Data.DateTime as Datetime ( 
     getCurrentTime,
@@ -38,13 +54,19 @@ import Control.Concurrent as Concurrent (
     threadDelay,
     newEmptyMVar,
     putMVar,
-    MVar ( .. ),
+    MVar,
     forkIO,
     readMVar )
 
-import Data.Text as T ( pack, Text ( .. ) )
+import Control.Monad.Trans.Class as MonadTransClass ( lift )
 
-import Data.Text.IO as TIO ( putStrLn )
+import Data.ByteString.Lazy.Char8 as BL8 ( ByteString )
+
+import Data.Text as T ( Text )
+
+--import Data.Text.IO as TIO ( putStrLn )
+
+import Data.CaseInsensitive as DataCase ( mk )
 
 import Data.Aeson as Json ( ToJSON, FromJSON )
 
@@ -53,5 +75,18 @@ import GHC.Generics as Generics ( Generic )
 import Text.Printf as Printf ( printf )
 
 import Network.Wai.Handler.Warp as Warp ( run )
+
+import Network.HTTP.Simple as HTTP ( 
+    httpJSON,
+    parseRequest,
+    getResponseBody,
+    setRequestBodyJSON,
+    setRequestMethod,
+    addRequestHeader,
+    JSONException,
+    Request,
+    Response )
+
+import System.Directory as Dir ( doesFileExist )
 
 import Control.Monad.IO.Class as MIO ( MonadIO ( .. ) )
